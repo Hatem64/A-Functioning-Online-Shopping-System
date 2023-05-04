@@ -1,0 +1,68 @@
+<!--<html>
+    <header>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./product.css">
+        <title>Products</title>
+    </header>
+    <body>
+
+        <div class = "product-container"> 
+            <h3>List Avaliable Products</h3>
+            <button id = "view"> View Products</button>  <button type = "submit"  id="view-prpduct-button">List Products</button>
+            <div id="product-list"></div>
+        </div>
+        <h3>Add New Products</h3>
+        <form id="addproduct"> 
+           Product Name:<input type="text" id ="productname" name="productname"></br>
+           Product price:<input type="text"  id ="productprice" name="productprice"></br>
+           Selling Company ID:<input type="text" id ="sellingCompanyID" name="sellingCompanyID"></br>
+           <button type ="submit" id="addproductbutton"> Add new Product </buttom></br>
+        </form>
+            
+        
+        
+        
+        <script> src=".\product.js"</script>
+    </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Login.css">
+    <title>Add Product</title>
+</head>
+
+
+    <center>
+        <h1 id="online-shopping-header">Add New Products</h1>
+    </center>
+
+    <div class="register-form-container">
+        <!-- <form id="register-form" method="post">
+            <h2>Add Product</h2>
+            <label for="username">name</label>
+            <input type="text" id="username" name="username" required>
+            <label for="price">Price</label>
+            <input type="price" id="price" name="price" required>
+            <button type="submit">Add</button>
+        </form> -->
+        <form id="add-product-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="price">Price:</label>
+            <input type="price" id="price" name="price">
+            <!-- <label for="company_ID">Company ID:</label>
+            <input type="text" id="company_ID" name="company_ID"> -->
+            <button type="submit">Add Product</button>
+          </form>
+    </div>
+    <div id="message"></div>
+    <script src="Addproduct.js"></script>
+</body>
+
+</html>

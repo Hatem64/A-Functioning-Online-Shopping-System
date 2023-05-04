@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="adminHomePage.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div>
+        <h2>Create Product Selling Companies Representative Accounts</h2>
+        <form id="create-product-company-accounts-form">
+            <label for="company-names">Company Names (comma separated):</label><br>
+            <input type="text" id="company-names" name="company-names"><br>
+            <label for="password-length">Password Length:</label><br>
+            <input type="number" id="password-length" name="password-length" min="8" max="20"><br>
+            <button id=createPasswordsButton type="submit">Create Accounts</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Create Shipping Companies</h2>
+        <form id="create-shipping-companies-form">
+            <label for="company-name">Company Name:</label><br>
+            <input type="text" id="company-name" name="company-name"><br>
+            <label for="geographic-coverage">Geographic Coverage:</label><br>
+            <input type="text" id="geographic-coverage" name="geographic-coverage"><br>
+            <button type="submit">Create Company</button>
+        </form>
+    </div>
+
+    <div class="button-container">
+        <button id="list-shipping-companies-btn">List Shipping Companies</button>
+        <div id="shipping-companies-container"></div>
+        <button id="list-selling-companies-btn">List Selling Companies Representative Accounts</button>
+        <div id="selling-companies-container"></div>
+    </div>
+
+    <div class="customer-container">
+        <h2>Customer Accounts</h2>
+        <button id="list-clients-button">List Clients</button>
+        <div id="client-list"></div>
+    </div>
+
+    <script src="adminHomePage.js"></script>
+</body>
+
+</html>
